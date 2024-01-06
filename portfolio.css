@@ -133,7 +133,7 @@ hr{
         flex-direction: column;
     }
     .buttons{
-        display: flex;
+        flex-direction: row;
         gap: 30px;
     }
 
