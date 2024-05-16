@@ -55,16 +55,23 @@
     align-self: center;
     display: flex;
     gap: 25px;
+    height: 80px;
 }
 .social-links img{
     width: 40px;
     height: 40px;
 }
+.social-links img:hover{
+    width: 50px;
+    height: 50px;
+    transition: all 0.2s;
+}
 .home-buttons{
     align-self: center;
 }
 .home-buttons button{
-    background-image: linear-gradient(to right, rgb(0, 109, 133),rgb(0, 107, 102));
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(0, 109, 133),rgb(0, 196, 186));
     font-family: monospace;
     color: white;
     margin:0 20px;
@@ -73,11 +80,17 @@
     border: none;
     border-radius: 20px;
 }
+.home-buttons button:hover{
+    background-image: linear-gradient(to right, rgb(0, 156, 191),rgb(1, 124, 118));
+    
+}
 .do-list li{
-    list-style-image: url();
+    list-style-image: url(../assets/right.svg);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .do img{
     filter: grayscale(1);
+    cursor: pointer;
     width: 90px;
 }
 .do img:hover{
@@ -85,18 +98,24 @@
 }
 .projects{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 40px;
     gap: 20px;
 }
 .project{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 2px solid grey;
+    border: 2px solid rgb(201, 207, 255);
     padding: 10px;
-    width: 40%;
+    width: 500px;
+    height: 100px;
+}
+.project:hover{
+    background-image: linear-gradient(to right,rgb(179, 179, 255),white);
 }
 .project p{
     font-family: monospace;
@@ -115,4 +134,72 @@
     font-size: 30px;
     font-family:serif;
     margin-left: 50px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.center button{
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(0, 109, 133),rgb(0, 196, 186));
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+.center button:hover{
+    background-image: linear-gradient(to right, rgb(0, 156, 191),rgb(1, 124, 118));
+}
+.Achievements{
+    padding: 20px;
+}
+.Achievements ul li{
+    list-style-image: url(../assets/right.svg);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 90px;
+}
+.contact{
+    position: relative;
+}
+.img img{
+    width: 400px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    border: 4px black dotted;
+}
+.text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+.head{
+    font-family: monospace;
+    font-size: 40px;
+}
+.cntct-about{
+    color: gray;
+}
+.loc a{
+    text-decoration: none;
+    color: black;
+}
+.cntct-head{
+    position:absolute;
+    font-size: 50px;
+    font-family:serif;
+    left: 40px;
+    color: rgb(0, 174, 201);
+    top: 100px;
+}
+.whatsapp{
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 }

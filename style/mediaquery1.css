@@ -1,5 +1,32 @@
 @media all and (max-width:1100px){
-    .do img{
-        filter: 0;
+    .nav{
+        flex-direction: column;
+    }
+    .nav a{
+        font-size: 1rem;
+    }
+    .home-image{
+        display: none;
+    }
+    .home-text{
+        width: 100%;
+    }
+    .heading,.bio{
+        text-align: center;
+    }
+    .contact{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cntct-head{
+        margin: 0 auto;
+    }
+    .text{
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+    }
+    .cntct-head{
+        position:unset;
     }
 }
